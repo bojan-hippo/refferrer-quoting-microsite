@@ -6,6 +6,7 @@ import {
   HomeOrRent,
   Matches,
   Welcome,
+  NotFound,
 } from "../pages";
 import ROUTES from "./constants";
 
@@ -18,6 +19,7 @@ export default function Router() {
       <Route path={ROUTES.CUSTOMER_CONTACT_DETAILS} element={<CustomerContactDetails />} />
       <Route path={ROUTES.CUSTOMER_CONSENT} element={<CustomerConsent />} />
       <Route path={ROUTES.MATCHES} element={<Matches />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
