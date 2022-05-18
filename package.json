@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
@@ -27,7 +27,7 @@
     "check-types": "tsc --project tsconfig.json --pretty --noEmit",
     "check-format": "npm run prettier -- --list-different",
     "validate-and-build": "npm-run-all --parallel check-types check-format lint build",
-    "validate": "npm-run-all --parallel check-types lint format",
+    "validate": "npm-run-all --parallel check-types lint format test",
     "prepare": "husky install"
   },
   "eslintConfig": {
