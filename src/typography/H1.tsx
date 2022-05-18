@@ -1,3 +1,10 @@
-export default function H1() {
-  return <h1>H1</h1>;
+import { ReactNode } from "react";
+import "./styles.scss";
+
+interface Props {
+  children: string | ReactNode;
+}
+
+export default function H1({ children }: Props) {
+  return <h1 className="H1">{children}</h1>;
 }

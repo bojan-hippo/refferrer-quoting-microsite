@@ -1,0 +1,16 @@
+@import "./style/variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Merriweather:wght@300&display=swap");
+
+body {
+  margin: 0;
+  background-color: $purple;
+  color: $white;
+}
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
