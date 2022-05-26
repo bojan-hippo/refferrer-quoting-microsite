@@ -1,3 +1,9 @@
+import Button from "../Button";
+
 export default function Hero() {
-  return <div>Hero</div>;
+  return (
+    <div>
+      <Button text="View Details" color="white" action={() => console.log("CLICK")} />
+    </div>
+  );
 }
