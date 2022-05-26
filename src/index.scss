@@ -1,0 +1,17 @@
+@import "./style/constants";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Nunito+Sans:wght@300;600;700&display=swap");
+
+body {
+  margin: 0;
+  background-color: $light-gray;
+  color: $white;
+  font-family: $nunito;
+}
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
